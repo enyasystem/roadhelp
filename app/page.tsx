@@ -272,7 +272,10 @@ export default function Home() {
                   <div className="text-center">
                     <MapPin className="w-16 h-16 text-primary mx-auto mb-4" />
                     <p className="text-lg font-semibold">Interactive Coverage Map</p>
-                    <p className="text-muted-foreground">Coming Soon</p>
+                    <p className="text-muted-foreground mb-4">Coming Soon</p>
+                    <Button variant="outline" className="bg-white text-blue-900 border-blue-200" asChild>
+                      <a href="#waitlist" aria-label="Join waitlist for coverage map">Join Waitlist</a>
+                    </Button>
                   </div>
                 </div>
               </div>
@@ -454,13 +457,27 @@ export default function Home() {
                 </div>
 
                 <div className="flex gap-4">
-                  <Button className="flex items-center gap-2">
-                    <Download className="w-4 h-4" />
-                    Download for iOS
+                  <Button asChild className="flex items-center gap-2">
+                    <a
+                      href="https://apps.apple.com/app/apple-store/idXXXXXXXXX"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Download for iOS (Coming Soon)"
+                    >
+                      <Download className="w-4 h-4" />
+                      Download for iOS (Coming Soon)
+                    </a>
                   </Button>
-                  <Button variant="outline" className="flex items-center gap-2 bg-transparent">
-                    <Download className="w-4 h-4" />
-                    Download for Android
+                  <Button asChild variant="outline" className="flex items-center gap-2 bg-transparent">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=XXXXXXXXX"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Download for Android (Coming Soon)"
+                    >
+                      <Download className="w-4 h-4" />
+                      Download for Android (Coming Soon)
+                    </a>
                   </Button>
                 </div>
               </div>
